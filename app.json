@@ -1,0 +1,24 @@
+{
+  "name": "notchapp_dashboard",
+  "description": "The admin microservice of notchapp_dashboard",
+  "website": "http://www.forestadmin.com/lumber",
+  "repository": "https://github.com/ForestAdmin/lumber",
+  "env": {
+    "FOREST_AUTH_SECRET": {
+      "description": "A random JWT signing secret to protect your admin API",
+      "value": "d667eca13451707072da831bbc86739e10db753999a72ba1259a2680f39f1554abc910d698122e129059784984a74336"
+    },
+    "FOREST_ENV_SECRET": {
+      "description": "The Forest environment secret",
+      "value": "9fb6dadcf90e5c0a04764a87f43bc80ba23f06408fe282fca486d4e112044735"
+    },
+    "DATABASE_URL": {
+      "description": "The remote database connection URL",
+      "value": "mysql://<user>:<password>@<host>:<port>/<databaseName>"
+    },
+    "SSL_DATABASE": {
+      "description": "Specify if a SSL database connection is required.",
+      "value": "true"
+    }
+  }
+}
